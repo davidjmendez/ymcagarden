@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h1 id="date"></h1>
+<p>This is a simple program that generates
+ a list of seeds that grow well in our current season!</p>
+<button onclick="myFunction()">Show Me!</button>
+
+<p id="demo"></p>
+ 
+<script>
+function myFunction() {
+var april = ["Beans", "Corn", "Eggplant", "Melon", "Okra","Onion","Peas","Pepper","Potatoes","Pumpkin","Squash","Sweet Potato",
+"Watermelon"];
+    var x = april.join(',  ');
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+<script>
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];    
+    var d = new Date();
+document.getElementById("date").innerHTML = months[d.getMonth()] + " Sowing Guide:";
+</script> 
+</body>
+</html>
+ 

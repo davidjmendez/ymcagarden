@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<p>April is a great time to sow:</p>
+ 
+<button onclick="myFunction()">Show Me!</button>
+ 
+<p id="demo"></p>
+ 
+<script>
+function myFunction() {
+    var april = ["Beans", "Corn", "Melon", "Okra"];
+    var x = april.join(', ');
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+ 
+</body>
+</html>
+ 
