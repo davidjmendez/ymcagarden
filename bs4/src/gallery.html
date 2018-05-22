@@ -6,17 +6,18 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/pricing.css">
 	<link rel="stylesheet" href="/css/gallery.css">
+	<link rel="stylesheet" href="/css/modal.css">
+	<link rel="stylesheet" href="/css/pricing.css">
     </head>
 
     <body>
       <nav class="navbar navbar-expand-sm  navbar-light bg-light justify-content-between font3">
 	<div class="container">
-	  <a class="navbar-brand" href="#">NACG</a>
+	  <a class="navbar-brand" href="#">NORTH AUSTIN COMMUNITY GARDEN</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -25,13 +26,13 @@
 	      <li class="nav-item">
 		<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item active">
+	      <li class="nav-item">
 		<a class="nav-link" href="pricing.html">Pricing</a>
 	      </li>
 	      <li class="nav-item">
 		<a class="nav-link" href="guides.html">Guides</a>
 	      </li>
-	       <li class="nav-item">
+	       <li class="nav-item active">
 		<a class="nav-link" href="gallery.html">Gallery</a>
 	      </li>
 	    </ul>
@@ -57,13 +58,15 @@
       <h1 class="display-4 pt-5">Community Garden Gallery</h1>
       <p class="lead">Plots in our Community Garden have gone quickly!  We do still have a couple of wheelchair-accessible plots available.</p>
     </div>
+    <!-- gallery -->
     <div class="container">
       <div class="row">
 	<div class="column">
-	  <img src="../assets/garden.jpg" style="width: 100%">
-	</div>
+          <img  src="../assets/garden.jpg" style="width: 100%" onclick="myFunction(this);">
+          <img  src="../assets/shroom.jpg" style="width: 100%" onclick="myFunction(this);">
+        </div>
 	<div class="column">
-	  <img src="../assets/garden.jpg" style="width: 100%">
+	  <img  src="/assets/kids.jpg" style="width: 100%" onclick="myFunction(this);">
 	</div>
 	<div class="column">
 	  <img src="../assets/garden.jpg" style="width: 100%">
@@ -73,8 +76,37 @@
 	</div>
       </div>
     </div>
+    <!-- modal -->
+    <!-- The Modal -->
     
-  
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption">This is my Picture</div>
+    </div>
+
+    <div id="myModal" class="modal">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="img01">
+    <div id="imgtext"></div>
+    </div>
+        <script>
+        var modal = document.getElementById('myModal');
+        function myFunction(imgs) {
+	  var expandImg = document.getElementById("img01");
+	  var imgText = document.getElementById("imgtext");
+	  expandImg.src = imgs.src;
+	  imgText.innerHTML = imgs.alt;
+	  expandImg.parentElement.style.display = "block";
+	}
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+      </script>
       <script src="/js/jquery.min.js"></script>
       <script src="/js/popper.min.js"></script>
       <script src="/js/bootstrap.min.js"></script>
