@@ -4,11 +4,201 @@
         <title>NACG | Home</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/sliderw3.css">
+	<style>/*
+	.slide-text .magenta{
+    font-size: .5rem;
+    padding: 5px 14px 5px 14px;
+        }
+.slide-text .purple{
+    font-size: .5rem;
+    padding: 5px 14px 5px 14px;
+}*//*
+	h1, .h1 {
+        font-size: .5rem; }
+*//*
+	h2, .h2{ font-size: 1rem;}
+	// Extra small devices (portrait phones, less than 576px)
+	// No media query for `xs` since this is the default in Bootstrap
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) {
+          .slide-text .magenta{
+	      font-size: 12rem;
+          }
+	h1, .h1 {
+        font-size: 4.5rem; }
+
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @media (max-width: 768px) {
+          .slide-text .magenta{
+	      font-size: 6rem;
+          }
+
+	}
+
+ */
+	@media (min-width: 1200px){
+        h1, .h1{
+	    margin-bottom: 1.3rem;
+	    
+	}
+	    h2, .h2{
+		margin-bottom: 1rem;
+	    }
+        .slide-text{
+	       left: 14%;
+	   }
+	.magenta{
+	    padding: 7px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 3.2rem;
+	    
+	}
+	.purple{
+	    padding: 3px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 2.4rem;
+	    
+	}
+        }
+	@media (max-width: 1200px){
+        h1, .h1{
+	    margin-bottom: 1.3rem;
+	    
+	}
+	    h2, .h2{
+		margin-bottom: 1rem;
+	    }
+        .slide-text{
+	       left: 12%;
+	   }
+	.magenta{
+	    padding: 7px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 3.2rem;
+	    
+	}
+	.purple{
+	    padding: 3px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 2.4rem;
+	    
+	}
+	   
+        }
+	@media (max-width: 992px){
+	    h1, .h1{
+		margin-bottom: 1rem;
+	    }
+	    h2, .h2{
+		margin-bottom: 1rem;
+	    }
+	    .slide-text{
+	       left: 13%;
+           }
+	.magenta{
+	    padding: 7px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 2.6rem;
+	}
+	.purple{
+	    padding: 3px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 2rem;
+	    margin-bottom: -24px;
+	  
+	}
+
+        }
+	@media (max-width: 768px){
+            .slide-text{
+		left:14%;
+	    }
+	    h1, .h1 {
+            font-size: .5rem;
+	    margin-bottom: 0;
+	}
+	.magenta{
+	    padding: 7px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 1.8rem;
+	    margin: 0;
+	    margin-bottom: 50px;
+	}
+	.purple{
+	    padding: 3px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 1rem;
+	    margin: 0;
+	  
+	}
+        }
+	@media (max-width: 576px) {
+	    .slide-text{
+		left:0%;
+	    }
+	    h1, .h1 {
+            font-size: .5rem;
+	    margin: 0;
+	}
+	.magenta{
+	    padding: 7px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: 1.4rem;
+	    margin: 0;
+	    margin-bottom: 50px;
+	}
+	.purple{
+	    padding: 7px;
+	    padding-left: 12px;
+	    padding-right: 12px;
+	    font-size: .7rem;
+	    margin: 0;
+	    margin-top: -24px;
+	}
+/*          .slide-text .magenta{
+	      font-size: 3.4rem;
+	      padding: 3px;
+	      padding-right: 12px;
+	      padding-left: 12px;
+          }
+	  .slide-text .purple{
+	      font-size: 2.2rem;
+	  }
+*/
+/*
+	h1, .h1 {
+        font-size: 3.5rem; }
+
+        }
+
+        // Large devices (desktops, 992px and up)
+        @media (max-width: 992px) {
+          .slide-text .magenta{
+	      font-size: 1rem;
+          }
+	h1, .h1 {
+        font-size: 6.5rem; }
+
+	}
+*/
+	</style>
     </head>
     <body>
       <nav class="navbar navbar-expand-sm  navbar-light bg-light justify-content-between font3">
@@ -51,10 +241,10 @@
 	  <div class="container">
 	    <div class="row justify-content-between">
 	      <div class="text-white">
-		<h5 class="font1 pl-3">YMCA North Austin</h5>
-		<h5 class="font1 pl-3">North Austin Community Garden</h5>
+		<h5 class="font1 pl-3 mb-1 mt-1">YMCA North Austin</h5>
+		<h5 class="font1 pl-3 mb-0">North Austin Community Garden</h5>
 	      </div>
-	      <div class="d-none d-md-block text-white">
+	      <div class="d-none d-md-block text-white ">
 		<h6 class="pt-2 pr-5 font3"><i class="fa fa-map-marker">   </i> 1000 W. Rundberg Ln.Austin, TX 78758<br><p class="pt-1"><i class="fa fa-phone">   </i> 512 973 9622</p></h6>
 		
 	      </div> 	      
@@ -62,7 +252,7 @@
 	  </div><!-- container -->
 	</div>
       </div><!-- end banner -->
-
+<!--
       <div id="half-picture">
         <div class="jumbotron jumbotron-fluid">
 	  <div class="container clearfix text-white">
@@ -75,8 +265,42 @@
       </div><!-- end half-picture -->
       <!--<div class="">
         <iframe width="100%" height="600px" src="https://www.youtube.com/embed/pboleS3hLbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+      <div class="slideshow-container">
+	<div class="mySlides fade2">
+	  <div class="numbertext"></div>
+	  <img src="/assets/mariposa21-9.jpg" style="width:100%">
+	  <div class="container slide-text">
+	    <h1 class="font2"><span class="magenta">Grow Something Beautiful!</span></h1>
+	    <h2><span class="purple">Join the North Austin Community Garden!</span></h2>
+	    <a href="pricing.html" style="font-size: 12px;"><button type="button" class="btn btn-outline-light font2">Learn More!</button></a>
+	  </div>
+	</div>
+	<div class="mySlides fade2">
+	  <div class="numbertext"></div>
+	  <img src="assets/flower21-9.JPG" style="width:100%">
+	  <!-- <div class="text">Caption Two</div>-->
+	  <div class="container slide-text font2">
+	    <h1 class="font2"><span class="magenta">Grow Something Beautiful</span></h1>
+	    <h2 class=""><span class="purple">Join the North Austin Community Garden!</span></h2>
+	    <a href="pricing.html" style="font-size: 12px;"><button type="button" class="btn btn-outline-light font2">Learn More!</button></a>
+	  </div>
+	</div>
+	<div class="mySlides fade2">
+	  <div class="numbertext"></div>
+	  <img src="assets/bee21-9.jpg" style="width:100%">
+	  <!--<div class="text">Caption Three</div>-->
+	  <div class="container slide-text font2">
+	    <h1 class="font2"><span class="magenta">Grow Something Beautiful</span></h1>
+	    <h2 class=""><span class="purple">Join the North Austin Community Garden!</span></h2>
+	    <p class="font2"><a href="pricing.html"><button type="button" class="btn btn-outline-light font2">Learn More!</button></a></p>
+	  </div>
+	</div>
+	<!--
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	    -->
+      </div>
       <div class="container">
-	</br>
 	</br>
       </div>
       </div><!-- end container -->
@@ -89,11 +313,8 @@
 	 <!-- <p>Here you will find guides and articles written by North Austin Community Garden members on how to be a succesful
 	  gardener. The articles are especially written for our community members, and are a great source of gardening knowledge.</p>-->
 	  <hr>
-
 	  </div><!-- end col-10 -->
 	  <div class="col-md-2">
-	    
-	    
 	    <p class="lead">Recent Posts</p>
 	    <hr>
 	    <p class="lead"><a href="rules.html"><h6>Site Rules</h6></a></p>
@@ -103,7 +324,6 @@
 	    <p class="lead"><a href="pricing.html"><h6>Become a Member</h6></a></p>
 	    <hr>
 	    <p class="lead"><a href="chilaquiles.html"><h6>Chilaquiles Casserole</h6></a></p>
-	    
 	    <hr>
 	  </div><!-- end col-2 -->
 	</div>
@@ -114,9 +334,22 @@
 	<p class="lead"><i class="fa fa-map-marker">   </i>   1000 W. Rundberg Ln.Austin, TX 78758</p>
 	<p class="lead"><i class="fa fa-clock-o">   </i> 5am - 10pm</p>
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d430.30654135473605!2d-97.70054875768753!3d30.36651106122386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cbdf1b4f04f3%3A0xf50e0e119e32f71d!2sN+Austin+Community+Garden%2FYMCA+Pedestrian+Walkway%2C+Austin%2C+TX+78758!5e0!3m2!1sen!2sus!4v1527021061050" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-
       </div><!-- end container -->
-
+      <script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+	  }
+      </script>
       <script src="/js/jquery.min.js"></script>
       <script src="/js/popper.min.js"></script>
       <script src="/js/bootstrap.min.js"></script>
