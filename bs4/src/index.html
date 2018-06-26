@@ -149,7 +149,7 @@
 	}
         }
 	@media (max-width: 576px) {
-	    .slide-text{
+	  .slide-text{
 		left:0%;
 	    }
 	    h1, .h1 {
@@ -266,9 +266,9 @@
       <!--<div class="">
         <iframe width="100%" height="600px" src="https://www.youtube.com/embed/pboleS3hLbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
       <div class="slideshow-container">
-	<div class="mySlides fade2">
+	<div class="mySlides fade2" id="">
 	  <div class="numbertext"></div>
-	  <img src="/assets/mariposa21-9.jpg" style="width:100%">
+	  <img src="/assets/mariposa21-9.jpg" style="width:100%;" id="slide1" >
 	  <div class="container slide-text">
 	    <h1 class="font2"><span class="magenta">Grow Something Beautiful!</span></h1>
 	    <h2><span class="purple">Join the North Austin Community Garden!</span></h2>
@@ -277,7 +277,7 @@
 	</div>
 	<div class="mySlides fade2">
 	  <div class="numbertext"></div>
-	  <img src="assets/flower21-9.jpg" style="width:100%">
+	  <img src="assets/flower21-9.jpg" style="width:100%" id="slide2">
 	  <!-- <div class="text">Caption Two</div>-->
 	  <div class="container slide-text font2">
 	    <h1 class="font2"><span class="magenta">Grow Something Beautiful</span></h1>
@@ -287,7 +287,7 @@
 	</div>
 	<div class="mySlides fade2">
 	  <div class="numbertext"></div>
-	  <img src="assets/bee21-9.jpg" style="width:100%">
+	  <img src="assets/bee21-9.jpg" style="width:100%" id="slide3">
 	  <!--<div class="text">Caption Three</div>-->
 	  <div class="container slide-text font2">
 	    <h1 class="font2"><span class="magenta">Grow Something Beautiful</span></h1>
@@ -350,6 +350,24 @@ function showSlides() {
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 	  }
       </script>
+      <!-- Change image source for mobil. -->
+      <script>
+		function myFunction(x) {
+		    if (x.matches) { // If media query matches
+			document.getElementById("slide1").src = "/assets/mariposa16-9.jpg";
+			document.getElementById("slide2").src = "/assets/flower16-9.jpg";
+			document.getElementById("slide3").src = "/assets/bee16-9.jpg";
+		    } else {
+			document.getElementById("slide1").src = "/assets/mariposa21-9.jpg";
+		    	document.getElementById("slide2").src = "/assets/flower21-9.jpg";
+		    	document.getElementById("slide3").src = "/assets/bee21-9.jpg";
+		    }
+		}
+
+	    var x = window.matchMedia("(max-width: 576px)")
+	    myFunction(x) // Call listener function at run time
+	    x.addListener(myFunction) // Attach listener function on state changes
+	    </script>
       <script src="/js/jquery.min.js"></script>
       <script src="/js/popper.min.js"></script>
       <script src="/js/bootstrap.min.js"></script>
